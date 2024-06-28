@@ -1,0 +1,177 @@
+*{
+margin: 0;
+padding: 0;
+border: 0;
+box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+    background-color: #14c768;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 50px;
+    background-color: #0FA958;
+    border-radius: 15px;
+
+  }
+  .profile{
+    border-radius: 50px;
+  }
+
+  p{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+  }
+
+
+  .add-button{
+
+    background-color: #0FA958;    
+    color: whitesmoke;
+    padding: 15px;
+    border-radius: 15px ;
+    margin-left: 450px;
+  }
+  .image{
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  .right-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+
+ 
+  .task-sections {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .task-section {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .task.pending {
+    background-color: #FFF3CD;
+  }
+  
+  .task.completed {
+    background-color: #D4EDDA;
+  }
+  
+  .task.past-due {
+    background-color: #F8D7DA;
+  }
+  
+  .box {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: black; 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .box-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+@media (max-width: 600px){
+
+    .container {
+        padding: 10px;
+      }
+    
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .task-sections {
+        flex-direction: column;
+      }
+    
+      .task-section {
+        margin: 20px 0;
+        width: 100%;
+      }
+    
+      .task {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .box-content {
+        width: 90%;
+        margin: 50px auto;
+      }
+    
+
+  
+}
